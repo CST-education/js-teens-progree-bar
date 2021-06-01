@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+:root {
+  --line-border-empty: rgb(223, 44, 44);
+  --line-border-fill: rgb(74, 209, 32);
+}
+
+body {
+  font-family: 'Ovo', serif;
+}
+.progress-bar {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  position: relative;
+}
+.progress-container::before {
+  content: '';
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+  transition: 400ms ease;
+}
+.progress {
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 400ms ease;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+.fa-html5 {
+  color: rgb(255, 123, 0);
+}
+
+.fa-css3 {
+  color: rgb(0, 119, 255);
+}
+.fa-js {
+  color: rgb(255, 238, 0);
+}
+.fa-react {
+  color: rgb(32, 155, 212);
+}
+.fa-node{
+    color: rgb(18, 39, 5);
+}
+.circle {
+  background-color: white;
+  color: grey;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 400ms ease;
+}
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-family: inherit;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 14px;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}

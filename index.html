@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/progress-bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="sim-slider">
+      <ul class="sim-slider-list">
+        <li>
+          <img
+            src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif"
+            alt="screen"
+          />
+        </li>
+        <!-- это экран -->
+        <li class="sim-slider-element">
+          <img src="http://pvbk.spb.ru/inc/slider/imgs/planet0.jpg" alt="0" />
+        </li>
+        <li class="sim-slider-element">
+          <img src="http://pvbk.spb.ru/inc/slider/imgs/planet1.jpg" alt="1" />
+        </li>
+        <li class="sim-slider-element">
+          <img src="http://pvbk.spb.ru/inc/slider/imgs/planet2.jpg" alt="2" />
+        </li>
+        <li class="sim-slider-element">
+          <img src="http://pvbk.spb.ru/inc/slider/imgs/planet3.jpg" alt="3" />
+        </li>
+        <li class="sim-slider-element">
+          <img src="http://pvbk.spb.ru/inc/slider/imgs/planet4.jpg" alt="4" />
+        </li>
+        <li class="sim-slider-element">
+          <img src="http://pvbk.spb.ru/inc/slider/imgs/planet5.jpg" alt="5" />
+        </li>
+      </ul>
+      <div class="sim-slider-arrow-left"></div>
+      <div class="sim-slider-arrow-right"></div>
+      <div class="sim-slider-dots"></div>
+    </div>
+
+    <div class="container progress-bar">
+      <h2>Progress-bar</h2>
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active"><i class="fab fa-html5 icon"></i></div>
+        <div class="circle active"><i class="fab fa-css3 icon"></i></div>
+        <div class="circle active"><i class="fab fa-js icon"></i></div>
+        <div class="circle active"><i class="fab fa-react icon"></i></div>
+        <div class="circle active"><i class="fab fa-node icon"></i></div>
+      </div>
+      <button class="btn" id="prev" disabled>prev</button>
+      <button class="btn" id="next">next</button>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
